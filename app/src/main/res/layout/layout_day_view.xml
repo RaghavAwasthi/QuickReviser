@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/style_dayview"
+        android:text="SU" />
+
+    <TextView
+        style="@style/style_dayview"
+        android:text="M" />
+
+    <TextView
+
+        style="@style/style_dayview"
+        android:text="T" />
+
+    <TextView
+
+        style="@style/style_dayview"
+        android:text="W" />
+
+    <TextView
+        style="@style/style_dayview"
+        android:text="Th" />
+
+    <TextView
+        style="@style/style_dayview"
+        android:text="F" />
+
+    <TextView
+        style="@style/style_dayview"
+        android:text="S" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

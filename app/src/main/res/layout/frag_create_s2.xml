@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/card_bg">
+
+    <EditText
+        android:id="@+id/cardback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="top"
+        android:hint="Write Back text here"
+        android:minHeight="150dp"
+        android:padding="15dp"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="17sp"
+         />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
