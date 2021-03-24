@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Template" >
-        <activity android:name="com.app.easyreviser.app.MainActivity" >
+        <activity android:name="com.app.easyreviser.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
