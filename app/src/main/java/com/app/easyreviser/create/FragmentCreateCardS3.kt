@@ -5,14 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.app.easyreviser.databinding.FragCreateS2Binding
+import com.app.easyreviser.databinding.FragCreateS3Binding
 
-class FragmentCreateCardS2 : Fragment() {
+class FragmentCreateCardS3 : Fragment() {
 
-
-    lateinit var binding: FragCreateS2Binding
+    lateinit var binding: FragCreateS3Binding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragCreateS2Binding.inflate(inflater)
+        binding = FragCreateS3Binding.inflate(inflater)
+
         return binding.root
     }
 }

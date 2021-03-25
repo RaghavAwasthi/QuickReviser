@@ -1,22 +1,19 @@
 package com.app.easyreviser.create
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.app.easyreviser.R
+import androidx.fragment.app.Fragment
+import com.app.easyreviser.databinding.FragCreateS1Binding
 
 class FragmentCreateCardS1 : Fragment() {
 
 
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_card_s1, container, false)
+    lateinit var binding: FragCreateS1Binding
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        binding = FragCreateS1Binding.inflate(inflater)
+        return binding.root
     }
 
 
