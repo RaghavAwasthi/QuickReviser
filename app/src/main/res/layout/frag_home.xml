@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -54,7 +55,15 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end" />
+        android:layout_gravity="bottom|end"
+
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#3D3D3D"
+        app:fabSize="auto"
+        app:maxImageSize="45dp"
+        app:tint="@android:color/white" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,17 +1,18 @@
 package com.app.easyreviser.create
 
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
+import androidx.navigation.fragment.findNavController
 import com.app.easyreviser.R
 import com.app.easyreviser.databinding.FragCreateCardBinding
-import com.app.easyreviser.models.CardModel
+import com.app.easyreviser.repository.db.AppDatabase
+import com.app.easyreviser.repository.entities.CardModel
+import com.app.easyreviser.repository.entities.DayModel
 
 class FragmentCreateCard : Fragment() {
 
@@ -41,7 +42,31 @@ class FragmentCreateCard : Fragment() {
     }
 
     fun saveData() {
+
+        cardData.value?.let {
+            AppDatabase.getInstance(requireContext()).userDao().insertAll(it)
+            addCard(it)
+        }
+        findNavController().popBackStack()
+
+
+
         Log.d("TAG", "saveData: ${cardData.value}")
+    }
+
+    fun addCard(card: CardModel) {
+        var count = 0;
+        var arrayofdayCodes = arrayListOf<String>("Su", "Mo", "Tu", "We", "Th", "Fr", "Sa")
+        for (i in card.repeatFrequency) {
+            if (i == 1)
+                AppDatabase.getInstance(requireContext()).dayDao().insertAll(
+                    DayModel(
+                        job = card,
+                        code = arrayofdayCodes.get(count)
+                    )
+                )
+            count++;
+        }
     }
 
     fun updateUI() {
@@ -73,7 +98,6 @@ class FragmentCreateCard : Fragment() {
                         updateUI()
                         bind.header.backViewImage.setImageResource(R.drawable.ic_stepper_1)
                         bind.header.AdditionalImage.setImageResource(R.drawable.ic_stepper_3_numeric_pre)
-
 
 
                     }

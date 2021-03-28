@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.app.easyreviser.databinding.FragCreateS1Binding
-import com.app.easyreviser.models.CardModel
+import com.app.easyreviser.repository.entities.CardModel
 
 class FragmentCreateCardS1 : Fragment() {
     lateinit var parent: FragmentCreateCard
