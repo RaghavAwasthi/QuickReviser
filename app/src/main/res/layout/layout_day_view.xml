@@ -6,32 +6,37 @@
     android:orientation="horizontal">
 
     <TextView
+        android:id="@+id/Su"
         style="@style/style_dayview"
         android:text="SU" />
 
     <TextView
+        android:id="@+id/M"
         style="@style/style_dayview"
         android:text="M" />
 
     <TextView
-
+        android:id="@+id/Tu"
         style="@style/style_dayview"
         android:text="T" />
 
     <TextView
-
+        android:id="@+id/We"
         style="@style/style_dayview"
         android:text="W" />
 
     <TextView
+        android:id="@+id/Th"
         style="@style/style_dayview"
         android:text="Th" />
 
     <TextView
+        android:id="@+id/Fr"
         style="@style/style_dayview"
         android:text="F" />
 
     <TextView
+        android:id="@+id/Sa"
         style="@style/style_dayview"
         android:text="S" />
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_create_card"
+    app:startDestination="@id/fragmentCreateCardS1">
+
+    <fragment
+        android:id="@+id/fragmentCreateCardS1"
+        android:name="com.app.easyreviser.create.FragmentCreateCardS1"
+        android:label="FragmentCreateCardS1">
+        <action
+            android:id="@+id/action_fragmentCreateCardS1_to_fragmentCreateCardS2"
+            app:destination="@id/fragmentCreateCardS2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCreateCardS2"
+        android:name="com.app.easyreviser.create.FragmentCreateCardS2"
+        android:label="FragmentCreateCardS2">
+        <action
+            android:id="@+id/action_fragmentCreateCardS2_to_fragmentCreateCardS3"
+            app:destination="@id/fragmentCreateCardS3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCreateCardS3"
+        android:name="com.app.easyreviser.create.FragmentCreateCardS3"
+        android:label="FragmentCreateCardS3" />
+</navigation>
