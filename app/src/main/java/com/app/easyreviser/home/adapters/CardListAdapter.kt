@@ -8,7 +8,7 @@ import com.app.easyreviser.databinding.ItemCardBinding
 import com.app.easyreviser.repository.entities.DayModel
 
 class CardListAdapter(mcardlist: List<DayModel>) :
-    RecyclerView.Adapter<CardListAdapter.CardViewHolder>() {
+        RecyclerView.Adapter<CardListAdapter.CardViewHolder>() {
 
 
     var cardList = mcardlist
