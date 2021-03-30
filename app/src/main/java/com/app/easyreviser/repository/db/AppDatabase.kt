@@ -15,7 +15,7 @@ import com.app.easyreviser.repository.entities.DayModel
 abstract class AppDatabase : RoomDatabase() {
 
 
-    abstract fun userDao(): CardDao
+    abstract fun cardDao(): CardDao
     abstract fun dayDao(): DayDao
 
     companion object {

@@ -17,6 +17,9 @@ interface DayDao {
     @Delete
     fun delete(card: DayModel)
 
+    @Query("DELETE FROM day_table")
+    fun deleteAll()
+
     @Update
     fun markCardasDone(card: DayModel)
 

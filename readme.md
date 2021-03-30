@@ -1,5 +1,6 @@
 ![example workflow](https://github.com/RaghavAwasthi/Template/actions/workflows/check.yaml/badge.svg)
 ![AUR license](https://img.shields.io/aur/license/android-studio)
+[![time tracker](https://wakatime.com/badge/github/RaghavAwasthi/QuickReviser.svg)](https://wakatime.com/badge/github/RaghavAwasthi/QuickReviser)
 
 ## Contributing
 - If you feel repository is missing something feel free to open an issue.

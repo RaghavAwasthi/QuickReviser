@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import com.app.easyreviser.R
 import com.app.easyreviser.databinding.FragCreateS3Binding
 
@@ -31,10 +30,7 @@ class FragmentCreateCardS3 : Fragment(), View.OnClickListener {
         )
         parentFragment?.let { fragment ->
             parent = fragment as FragmentCreateCard
-            fragment.cardData.observe(viewLifecycleOwner, Observer {
 
-
-            })
         }
         return binding.root
     }

@@ -13,7 +13,11 @@ class FragmentCreateCardS2 : Fragment() {
 
 
     lateinit var binding: FragCreateS2Binding
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         binding = FragCreateS2Binding.inflate(inflater)
         parentFragment?.let { fragment ->
             parent = fragment as FragmentCreateCard

@@ -5,14 +5,15 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.navigation.fragment.findNavController
 import com.app.easyreviser.R
 import com.app.easyreviser.databinding.FragCreateCardBinding
-import com.app.easyreviser.repository.db.AppDatabase
+import com.app.easyreviser.repository.AppRepository
 import com.app.easyreviser.repository.entities.CardModel
-import com.app.easyreviser.repository.entities.DayModel
+import com.app.easyreviser.utils.AppUtils.setImageDrawableWithAnimation
 
 class FragmentCreateCard : Fragment() {
 
@@ -44,8 +45,7 @@ class FragmentCreateCard : Fragment() {
     fun saveData() {
 
         cardData.value?.let {
-            AppDatabase.getInstance(requireContext()).userDao().insertAll(it)
-            addCard(it)
+            AppRepository.getInstance(requireContext()).addCard(it)
         }
         findNavController().popBackStack()
 
@@ -54,20 +54,6 @@ class FragmentCreateCard : Fragment() {
         Log.d("TAG", "saveData: ${cardData.value}")
     }
 
-    fun addCard(card: CardModel) {
-        var count = 0;
-        var arrayofdayCodes = arrayListOf<String>("Su", "Mo", "Tu", "We", "Th", "Fr", "Sa")
-        for (i in card.repeatFrequency) {
-            if (i == 1)
-                AppDatabase.getInstance(requireContext()).dayDao().insertAll(
-                    DayModel(
-                        job = card,
-                        code = arrayofdayCodes.get(count)
-                    )
-                )
-            count++;
-        }
-    }
 
     fun updateUI() {
 
@@ -83,7 +69,13 @@ class FragmentCreateCard : Fragment() {
                         curr++;
                         setCurrentFragm(FragmentCreateCardS2())
                         updateUI()
-                        bind.header.topViewImage.setImageResource(R.drawable.ic_stepper_1)
+                        bind.header.topViewImage.setImageDrawableWithAnimation(
+                            ResourcesCompat.getDrawable(
+                                resources,
+                                R.drawable.ic_stepper_1,
+                                requireActivity().theme!!
+                            )!!, 1000
+                        )
                         bind.header.backViewImage.setImageResource(R.drawable.ic_stepper_2_numeric_pre)
 
 

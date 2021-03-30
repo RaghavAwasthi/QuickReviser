@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.easyreviser">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".init.BaseApplication"
         android:allowBackup="true"
@@ -10,12 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Template">
-        <activity android:name="com.app.easyreviser.MainActivity">
+        <activity android:name=".init.LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".init.IntroActivity" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

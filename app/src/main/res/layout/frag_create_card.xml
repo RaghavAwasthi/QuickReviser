@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
 
     <include
         android:id="@+id/header"
@@ -25,12 +26,12 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/next"
-        app:backgroundTint="#424242"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:text="Next"
-       app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundTint="#424242"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
