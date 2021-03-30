@@ -13,7 +13,9 @@
         android:orientation="vertical">
 
 
-        <include layout="@layout/head_progressmeter" />
+        <include
+            android:id="@+id/header"
+            layout="@layout/head_progressmeter" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

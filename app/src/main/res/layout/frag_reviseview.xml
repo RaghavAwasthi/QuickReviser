@@ -39,14 +39,5 @@
         android:textSize="17sp" />
 
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/markasdone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:drawableLeft="@drawable/ic_done"
-        android:drawableTint="#FFFFFF"
-        android:text="Mark as Done" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

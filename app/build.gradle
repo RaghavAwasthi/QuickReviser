@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -31,8 +32,8 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    viewBinding{
-        enabled=true
+    viewBinding {
+        enabled = true
     }
 }
 
@@ -77,7 +78,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     // Testing LiveData
     testImplementation "androidx.arch.core:core-testing:$arch_version"
+    implementation 'eu.davidea:flipview:1.2.0'
 
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
     // Optional Libraries
     //  ReactiveStreams support for LiveData
     //  implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"

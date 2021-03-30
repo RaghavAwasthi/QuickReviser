@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".revise.ReviseFragment">
+
+
+    <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/flipView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:animationDuration="100"
+        app:frontBackground="@android:color/transparent"
+        app:frontLayout="@layout/layout_card_front"
+        app:rearBackground="@android:color/transparent"
+
+        app:rearLayout="@layout/layout_card_back"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/markasdone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_done"
+        android:drawableTint="#FFFFFF"
+        android:text="Mark as Done" />
+
+</LinearLayout>

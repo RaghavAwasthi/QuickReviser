@@ -22,7 +22,7 @@ class FragmentCreateCardS3 : Fragment(), View.OnClickListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragCreateS3Binding.inflate(inflater)
         attachListeners(
             binding.dayview.Fr,
