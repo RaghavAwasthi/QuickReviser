@@ -24,6 +24,7 @@ class ReviseFragment : Fragment() {
     ): View {
         bind = FragmentReviseBinding.inflate(inflater)
 
+        activity?.setTitle("Revise")
         bind.flipView.setFrontText(args.daymodel.job.textFront)
         bind.root.findViewById<TextView>(R.id.cardrear)
             .setText(args.daymodel.job.textFront)
