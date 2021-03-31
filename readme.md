@@ -1,5 +1,6 @@
 ![example workflow](https://github.com/RaghavAwasthi/Template/actions/workflows/check.yaml/badge.svg)
 ![AUR license](https://img.shields.io/aur/license/android-studio)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/45fa1852406b4bcfb3d243dcdbe13b19)](https://app.codacy.com/gh/RaghavAwasthi/QuickReviser?utm_source=github.com&utm_medium=referral&utm_content=RaghavAwasthi/QuickReviser&utm_campaign=Badge_Grade_Settings)
 [![time tracker](https://wakatime.com/badge/github/RaghavAwasthi/QuickReviser.svg)](https://wakatime.com/badge/github/RaghavAwasthi/QuickReviser)
 
 
