@@ -88,7 +88,7 @@ dependencies {
 
 
     implementation 'com.jakewharton.threetenabp:threetenabp:1.3.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2-native-mt'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0-native-mt'
     // Optional Libraries
     //  ReactiveStreams support for LiveData
     //  implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"
