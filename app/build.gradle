@@ -82,7 +82,7 @@ dependencies {
     testImplementation "androidx.arch.core:core-testing:$arch_version"
     implementation 'eu.davidea:flipview:1.2.0'
     implementation 'com.github.AppIntro:AppIntro:6.1.0'
-    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha08"
+    implementation "androidx.datastore:datastore-preferences:1.0.0-beta02"
     // Kotlin + coroutines
     implementation "androidx.work:work-runtime-ktx:$work_version"
 
